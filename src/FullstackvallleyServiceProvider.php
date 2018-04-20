@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class ExcelServiceProvider extends ServiceProvider
 {
+
     public function boot()
     {
         $this->publishes([
