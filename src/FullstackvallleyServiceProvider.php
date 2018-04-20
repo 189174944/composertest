@@ -4,7 +4,7 @@ namespace Hello;
 
 use Illuminate\Support\ServiceProvider;
 
-class ExcelServiceProvider extends ServiceProvider
+class FullstackvallleyServiceProvider extends ServiceProvider
 {
 
     public function boot()
