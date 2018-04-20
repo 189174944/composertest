@@ -15,6 +15,5 @@ class FullstackvallleyServiceProvider extends ServiceProvider
     }
     public function register()
     {
-
     }
 }
