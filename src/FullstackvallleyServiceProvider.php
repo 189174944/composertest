@@ -12,6 +12,7 @@ class FullstackvallleyServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/fullstackvalley.php' => config_path('fullstackvalley.php')
         ]);
+
     }
     public function register()
     {
