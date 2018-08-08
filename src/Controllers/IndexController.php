@@ -9,4 +9,7 @@ class IndexController
         echo "Hello World!";
         return view('fullstackvalley::index');
     }
+    public function test(){
+        dd('Package import successful!');
+    }
 }

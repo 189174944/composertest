@@ -6,4 +6,6 @@
  * Time: 00:42
  */
 
-Route::get('/a123', 'Hello\Controllers\IndexController@index');
+Route::get('fullstackvalley/test', 'Hello\Controllers\IndexController@test');
+Route::get('fullstackvalley/models/generate', 'Hello\Controllers\ModelsGenerateController@index');
+
