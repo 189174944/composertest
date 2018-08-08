@@ -8,4 +8,7 @@ Laravel实用工具包
 模型生成API:'http://127.0.0.1/fullstackvalley/models/generate?name=表名'
 
 高亮浏览模型
-http://127.0.0.1:8081/fullstackvalley/models/explore
+http://127.0.0.1:80/fullstackvalley/models/explore
+
+http://127.0.0.1:80/fullstackvalley/views/explore
+
