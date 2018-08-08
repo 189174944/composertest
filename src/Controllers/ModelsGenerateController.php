@@ -30,4 +30,9 @@ class ModelsGenerateController extends Controller
 //        echo "Hello World!";
 //        return view('fullstackvalley::index');
     }
+
+    public function explore()
+    {
+        return view('fullstackvalley::code');
+    }
 }

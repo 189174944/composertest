@@ -5,4 +5,7 @@ Laravel实用工具包
 
 测试包是否导入成功请GET请求‘http://您的域名/fullstackvalley/test’
 
-模型生成API:'http://您的域名/fullstackvalley/models/generate?name=表名'
+模型生成API:'http://127.0.0.1/fullstackvalley/models/generate?name=表名'
+
+高亮浏览模型
+http://127.0.0.1:8081/fullstackvalley/models/explore
