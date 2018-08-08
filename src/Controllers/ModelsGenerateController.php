@@ -38,11 +38,18 @@ class ModelsGenerateController extends Controller
         }
         $fillable = implode(',', array_values(array_unique($arr)));
         $code = sprintf('
+        <?php
+
+        namespace App\Models;
+        use Illuminate\Database\Eloquent\Model;
         
         class %s extends Model 
         {
-            protected $table=%s;
+            protected $table=\'%s\';
             protected $fillable =[%s];
+            public function add(){
+            
+            }
         }
     ', $tableName, $tableName, $fillable);
         return view('fullstackvalley::code', compact('code'));
