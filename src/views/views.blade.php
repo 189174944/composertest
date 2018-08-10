@@ -20,8 +20,6 @@
     </style>
 </head>
 <body class="ui container">
-
-
 <div class="ui inverted menu">
     <div class="header item">AutoProgrammer</div>
     <div class="active item">首页</div>
@@ -53,6 +51,9 @@
         <a class="item">Link</a>
     </div>
 </div>
+<div>
+    <img src="{{asset('ads/ads.png')}}" style="width: 100%">
+</div>
 
 
 <a class="ui red label">快捷生成表单</a>
@@ -62,7 +63,6 @@
 <a class="ui olive label">快捷生成API接口</a>
 <a class="ui olive label">常用业务逻辑复用</a>
 <a class="ui olive label">常用业务逻辑模版</a>
-
 
 
 <h1>
@@ -116,7 +116,8 @@
 </div>
 
 
-<div style="width: 300px;height: 100%;border: 1px solid black;background-color: white;position: fixed;bottom:0;right: 0" class="ControPanel">
+<div style="width: 300px;height: 100%;border: 1px solid black;background-color: white;position: fixed;bottom:0;right: 0"
+     class="ControPanel">
     <div class="ui top attached tabular menu">
         <a class="item active" data-tab="file">
             <i class="icon file"></i>

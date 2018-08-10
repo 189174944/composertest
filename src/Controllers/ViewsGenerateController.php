@@ -12,7 +12,11 @@ class ViewsGenerateController extends Controller
      */
     public function explore()
     {
-        $tableName = \request('name');
+        $tableName = \request('name') or (function(){
+            return response()->json([
+                'msg'=>'Please define table name!'
+            ]);
+        })();
         $code = sprintf('<table>
         <tr>
         %s
@@ -87,7 +91,6 @@ class ViewsGenerateController extends Controller
 %s
 ", $htmlCode, $this->getDeleteButton());
         return $tableBody;
-
     }
 
 //    获取数据表的所有列名，并且转换为一维数组
