@@ -30,11 +30,10 @@ class ModelsGenerateController extends Controller
         {
             protected $table=\'%s\';
             protected $fillable =[%s];
+            public $timestamps = false;
             
             /*
-             *
              *添加数据
-             *
              */
             public function add($data){
                 $result = $this->fill($data);
