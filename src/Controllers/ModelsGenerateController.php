@@ -81,6 +81,8 @@ class ModelsGenerateController extends Controller
             
         }
     ', $tableName, $tableName, $fillable);
-        return view('fullstackvalley::code', compact('code'));
+
+        $artisan = 'php artisan make:model Models\\'.$tableName;
+        return view('fullstackvalley::code', compact('code','artisan'));
     }
 }

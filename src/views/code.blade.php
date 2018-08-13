@@ -11,6 +11,7 @@
 
 <pre>
     <code class="php">
+        {{ $artisan }}
         {{  $code }}
     </code>
 </pre>
