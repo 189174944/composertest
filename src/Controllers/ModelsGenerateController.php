@@ -20,6 +20,7 @@ class ModelsGenerateController extends Controller
             array_push($arr, '"' . $x . '"');
         }
         $fillable = implode(',', array_values(array_unique($arr)));
+//        模板还是放在另一个文件中
         $code = sprintf('
         <?php
 
