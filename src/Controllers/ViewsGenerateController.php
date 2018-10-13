@@ -2,6 +2,7 @@
 
 namespace Hello\Controllers;
 
+use Hello\template\Person;
 use Illuminate\Support\Facades\DB;
 
 class ViewsGenerateController extends Controller
@@ -12,11 +13,10 @@ class ViewsGenerateController extends Controller
      */
     public function explore()
     {
-        $tableName = \request('name') or (function(){
-            return response()->json([
-                'msg'=>'Please define table name!'
-            ]);
-        })();
+        $tableName = \request('name');
+        if (empty($tableName)) {
+            dd('name不能为空！');
+        }
         $code = sprintf('<table>
         <tr>
         %s
@@ -37,6 +37,12 @@ class ViewsGenerateController extends Controller
            })
          })
      })
+     
+    $.ajaxSetup({
+    headers: {
+    \'X-CSRF-TOKEN\': $(\'meta[name="csrf-token"]\').attr(\'content\')
+    }
+    });
 </script>
     ', $this->generateTableHeader($tableName), $this->generateTableBody($tableName));
 
